@@ -16,4 +16,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= require hyperloop-loader
+//= require 'components'
+Opal.load('components');

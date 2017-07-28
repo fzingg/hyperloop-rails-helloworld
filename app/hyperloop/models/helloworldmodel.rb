@@ -1,2 +1,2 @@
-class Helloworldmodel < ApplicationRecord
+class Helloworldmodel < ActiveRecord::Base
 end
