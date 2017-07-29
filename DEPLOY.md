@@ -4,7 +4,7 @@ Run in local production (config prod database and RAILS_ENV=production rails db:
 Specific to Helloworld tuto
 in config/environments/production.rb
 
-  config.action_mailer.perform_caching = false
+  config.action_controller.perform_caching = true
   config.cache_store = :file_store, "tmp/cache"
 
 

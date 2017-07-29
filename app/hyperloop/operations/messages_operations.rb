@@ -20,12 +20,16 @@ module MessagesOperations
   class Send < MessagesBase
     param :message
 
+
     step do
+      
+      Rails.logger.info "#########################################"
       params.message = {
         message: params.message
       }
       newcachedmessages = cachedmessages << params.message
-      Rails.cache.write('messages', newcachedmessages)
+      Rails.logger.info "#{newcachedmessages}"
+      #Rails.cache.write('messages', newcachedmessages)
     end
   end
 
