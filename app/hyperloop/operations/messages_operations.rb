@@ -12,7 +12,6 @@ module MessagesOperations
 
   end
   
-
   class GetMessages < MessagesBase
     outbound :messages
 
@@ -31,12 +30,13 @@ module MessagesOperations
 
     step do
       
-      Rails.logger.info "*************************************"
+      
       params.message = {
         message: params.message
       }
       newcachedmessages = cachedmessages << params.message
-      Rails.logger.info "#{newcachedmessages}"
+      Rails.logger.info "*************************************"
+      Rails.logger.info "DEBUG 5: newcachedmessages #{newcachedmessages}"
       Rails.cache.write('messages', newcachedmessages)
     end
   end
