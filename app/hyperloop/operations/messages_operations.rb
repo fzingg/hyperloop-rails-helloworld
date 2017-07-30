@@ -14,7 +14,11 @@ module MessagesOperations
   class GetMessages < MessagesBase
     outbound :messages
 
-    step { params.messages = cachedmessages }
+    step do
+       params.messages = cachedmessages 
+       Rails.logger.info "#########################################"
+       Rails.logger.info "#{cachedmessages}"
+    end
   end
 
   class Send < MessagesBase
