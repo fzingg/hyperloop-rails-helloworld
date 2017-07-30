@@ -1,6 +1,8 @@
 
 Run in local production (config prod database and RAILS_ENV=production rails db:migrate)
 
+Advice: not sqlite in prod
+
 Specific to Helloworld tuto
 in config/environments/production.rb
 

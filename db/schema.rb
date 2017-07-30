@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170707191826) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "helloworldmodels", force: :cascade do |t|
     t.string "description"
     t.datetime "created_at", null: false
