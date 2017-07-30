@@ -7,6 +7,8 @@ class Helloworld < Hyperloop::Component
   end
 
   after_mount do
+    puts "*****************************"
+    puts "DEBUG 1: RUNNING GetMessages ServerOp"
     MessagesOperations::GetMessages.run
   end
 
