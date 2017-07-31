@@ -32,10 +32,16 @@ development:
  username: fcooker
  password: beloospsql
 
-production:
- adapter: postgresql
- encoding: unicode
- database: hyperlooprailshelloworld
- pool: 5
- username: fcooker
- password: beloospsql
+# production:
+#  adapter: postgresql
+#  encoding: unicode
+#  database: hyperlooprailshelloworld
+#  pool: 5
+#  username: fcooker
+#  password: beloospsql
+
+adapter: postgresql
+  encoding: unicode
+  database: hyperloop-rails-helloworld-heroku_production
+  username: hyperloop-rails-helloworld-heroku
+  password: <%= ENV['HYPERLOOP-RAILS-HELLOWORLD-HEROKU_DATABASE_PASSWORD'] %>
