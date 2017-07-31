@@ -46,10 +46,10 @@ module MessagesOperations
       params.message = {
         message: params.message
       }
-      #newcachedmessages = cachedmessages << params.message
-      #Rails.logger.info "*************************************"
-      #Rails.logger.info "DEBUG 5: newcachedmessages #{newcachedmessages}"
-      #Rails.cache.write('messages', newcachedmessages)
+      newcachedmessages = cachedmessages << params.message
+      Rails.logger.info "*************************************"
+      Rails.logger.info "DEBUG 5: newcachedmessages #{newcachedmessages}"
+      Rails.cache.write('messages', newcachedmessages)
     end
   end
 

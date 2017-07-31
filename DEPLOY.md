@@ -35,7 +35,7 @@ https://devcenter.heroku.com/articles/getting-started-with-rails5
 heroku login
 heroku create
 heroku addons:create heroku-postgresql
-
+heroku addons:add pusher
 
 #config/database.yml
 
