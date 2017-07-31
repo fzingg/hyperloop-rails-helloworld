@@ -29,9 +29,9 @@ class Helloworld < Hyperloop::Component
       
       description_table
 
-      #if MessageStore.messages?
+      if MessageStore.messages?
           Messages()
-      #end
+      end
 
     end
 
