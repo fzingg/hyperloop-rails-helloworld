@@ -21,6 +21,5 @@
 /yarn-error.log
 
 /vendor/bundle
-/public/assets
 
 .byebug_history
