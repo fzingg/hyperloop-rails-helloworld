@@ -15,12 +15,27 @@ in config/environments/production.rb
 
 Suppose: A VPS with rbenv, ruby 2.4.0, rails 5.1.2, git and NGINX with passenger
 
-Gem capistrano
+gem 'capistrano'
+gem 'capistrano-bundler'
+gem 'capistrano-rails'
+gem 'capistrano-rbenv', github: "capistrano/rbenv"
+
+bundle install
+
+bundle exec cap install STAGES=production
+
+
 Capistrano config 
-Capistrano deploy
-Secrets.yml database.yml
 
+Bundle exec cap production deploy
 
+scp config/secrets.yml fcooker@pixagency.com:/home/fcooker/apps/testapp/shared/config/
+scp config/database.yml fcooker@pixagency.com:/home/fcooker/apps/testapp/shared/config/
+
+sudo -u postgres psql
+CREATE DATABASE testapp owner fcooker;
+
+Bundle exec cap production deploy
 
 
 

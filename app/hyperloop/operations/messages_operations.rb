@@ -1,5 +1,17 @@
 module MessagesOperations
 
+  class TestServerOp < Hyperloop::ServerOp
+    param :acting_user, nils: true
+    dispatch_to { Hyperloop::Application }
+
+    step { Rails.logger.info " *************** DEBUG TestServerOp ********************** " }
+
+  end
+
+  class TestOp < Hyperloop::Operation
+    step { alert(" *************** DEBUG TestOp ********************** ") }
+  end
+
   class MessagesBase < Hyperloop::ServerOp
     param :acting_user, nils: true
     dispatch_to { Hyperloop::Application }

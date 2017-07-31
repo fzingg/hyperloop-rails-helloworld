@@ -26,6 +26,20 @@ class InputMessage < Hyperloop::Component
 
 			    HR {}
 
+			    BUTTON(class: 'btn btn-warning') do
+			      "TestServerOp"
+			    end.on(:click) do |ev|
+			      MessagesOperations::TestServerOp.run
+			    end
+
+			    HR {}
+
+			    BUTTON(class: 'btn btn-warning') do
+			      "TestOp"
+			    end.on(:click) do |ev|
+			      MessagesOperations::TestOp.run
+			    end
+
 			end
 		end
 
