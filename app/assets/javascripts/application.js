@@ -17,5 +17,7 @@
 //= require turbolinks
 //= require 'hyperloop/pusher'
 //= require_tree .
+
 //= require 'components'
 Opal.load('components');
+

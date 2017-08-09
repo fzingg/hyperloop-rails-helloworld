@@ -1,0 +1,3302 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>README</title></head><body><article class="markdown-body"><p><img alt="Screen" src="http://ruby-hyperloop.io/images/tutorials/Hyperloop-helloworld.png" /></p>
+<h2 id="this-is-a-simple-application-showcasing-hyperloop"><a name="user-content-this-is-a-simple-application-showcasing-hyperloop" href="#this-is-a-simple-application-showcasing-hyperloop" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>This is a simple application showcasing <strong>Hyperloop</strong></h2>
+<ul>
+<li>Tutorial of this sample app: <a href="http://ruby-hyperloop.io/tutorials/hyperlooprails/helloworld/">Hyperloop with Rails Helloworld app</a></li>
+<li>For more information about hyperloop technology : <a href="http://ruby-hyperloop.io/">Hyperloop Web site</a></li>
+<li>Hyperloop GEM source code: <a href="https://github.com/ruby-hyperloop/hyperloop">Hyperloop GEM</a></li>
+</ul>
+<hr />
+<h2 id="title-tutorials-videos-quickstarts"><a name="user-content-title-tutorials-videos-quickstarts" href="#title-tutorials-videos-quickstarts" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>title: Tutorials, Videos &amp; Quickstarts</h2>
+<h2 id="helloworld-tutorial"><a name="user-content-helloworld-tutorial" href="#helloworld-tutorial" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><i class="flaticon-professor-teaching"></i><span class="bigfirstletter">H</span>elloWorld Tutorial</h2>
+<p><img src="http://ruby-hyperloop.io/images/tutorials/Hyperloop-Railshelloworld.gif" class="imgborder"></p>
+<p>You can find the complete source code of this tutorial here: </p>
+<p><button type="button" class="btn btn-primary btn-lg btn-hyperlooptrace" onclick="location.href='https://github.com/ruby-hyperloop/hyperloop-rails-helloworld';">Hyperloop with Rails Helloworld source code</button></p>
+<h2 id="table-of-contents"><a name="user-content-table-of-contents" href="#table-of-contents" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Table of contents</h2>
+<blockquote>
+<p><a href="#introduction"><h4>Introduction</h4></a><br />
+<a href="#chapter1"><h4>Chapter 1: Setting things up and styling</h4></a><br />
+<a href="#chapter2"><h4>Chapter 2: First Hyperloop Component</h4></a><br />
+<a href="#chapter3"><h4>Chapter 3: Hyperloop&rsquo;s jQuery wrapper</h4></a><br />
+<a href="#chapter4"><h4>Chapter 4: First Hyperloop Store</h4></a><br />
+<a href="#chapter5"><h4>Chapter 5: First Isomorphic Model</h4></a><br />
+<a href="#chapter6"><h4>Chapter 6: First Hyperloop Operation</h4></a><br />
+<a href="#chapter7"><h4>Chapter 7: First Hyperloop Server Operation</h4></a><br />
+<a href="#chapter8"><h4>Chapter 8: Deploy to production</h4></a></p>
+</blockquote>
+<p><br><br />
+<br></p>
+<h2 id="introduction"><a name="user-content-introduction" href="#introduction" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="introduction">Introduction</a></h2>
+<p>This simple tutorial will teach you the basic of using each Hyperloop architecture brick: <a href="/docs/components/dsl-overview" class="component-blue"><b>C</b>omponents</a>, <a href="/docs/stores/overview" class="store-green"><b>S</b>tores</a>, <a href="/docs/models/active-record" class="model-orange"><b>I</b>somorphic models and ActiveRecord API</a>,  <a href="/docs/operations/overview" class="operation-purple"><b>O</b>perations</a>, <a href="/docs/operations/overview/#server-operations" class="operation-purple"><b>S</b>erver <b>O</b>perations</a>, each one introduced step by step, within a Ruby On Rails environment. </p>
+<p>At the end of this tutorial, we will have a simple app which will:</p>
+<ul>
+<li>Display a toggle button showing/hiding an input field and a save button.</li>
+<li>When clicking on this save button, the content of the input field will be saved into a database and a list of all records will be displayed and updated automatically.</li>
+<li>Display a message field with a send button.</li>
+<li>When clicking on the send button, the content of the message field will be saved into the Rails Cache and a list of all messages will be displayed and updated automatically.</li>
+</ul>
+<p><br><br />
+<br></p>
+<h2 id="chapter-1-setting-things-up-and-styling"><a name="user-content-chapter-1-setting-things-up-and-styling" href="#chapter-1-setting-things-up-and-styling" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="chapter1"><div class="hyperlogoalone"><img src="/images/hyperloop-logo-small-pink.png" width="50" alt="Hyperloop"></div>Chapter 1: Setting things up and styling</a></h2>
+<p>To set up your <strong>Hyperloop</strong> environment and continue this tutorial, please first follow the <br><br><br />
+<button type="button" class="btn btn-primary btn-lg btn-hyperlooppink" onclick="location.href='/installation#rorsetup';">Hyperloop installation with Ruby On Rails tutorial</button></p>
+<p>After <strong>Hyperloop</strong> has been installed properly we can go further.</p>
+<h3 id="step-11-creating-the-helloworld-component"><a name="user-content-step-11-creating-the-helloworld-component" href="#step-11-creating-the-helloworld-component" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 1.1: Creating the Helloworld component</h3>
+<p>Run the hyperloop generator:</p>
+<pre><code>rails g hyper:component Helloworld
+</code></pre>
+
+<p>You can view the new Component created in <code>/app/hyperloop/components/</code></p>
+<h3 id="step-12-updating-the-routesrb-file"><a name="user-content-step-12-updating-the-routesrb-file" href="#step-12-updating-the-routesrb-file" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 1.2: Updating the routes.rb file</h3>
+<p>In order to mount your component we are going to create an URL in the routes file which will dispatch to the <code>helloworld</code> component.</p>
+<p>Add this line in your <code>routes.rb</code> file (better to keep the line <code>mount Hyperloop::Engine =&gt; '/hyperloop'</code> at the top of the file)</p>
+<pre><code class="ruby">#config/routes.rb
+
+mount Hyperloop::Engine =&gt; '/hyperloop'
+root 'hyperloop#helloworld'
+</code></pre>
+
+<p><br><br><br />
+<hr></p>
+<p><i class="flaticon-signs"></i> A component can be mounted in different ways, from a controller or view file for example. Please consult the documentation: <a href="/docs/components/elements-rendering/">{ Elements and rendering }</a></p>
+<p>For example, from a View:</p>
+<pre><code class="erb">    &lt;%= react_component '::Helloworld' %&gt;
+</code></pre>
+
+<p>Or, from a Controller:</p>
+<pre><code class="erb">    render_component(&quot;Helloworld&quot;)
+</code></pre>
+
+<p><hr><br />
+<br></p>
+<h3 id="step-13-testing-your-app"><a name="user-content-step-13-testing-your-app" href="#step-13-testing-your-app" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 1.3: Testing your app</h3>
+<p>Start your Rails server and browse <code>http://localhost:3000</code>.</p>
+<p>You should see the text <code>Helloworld</code> rendered by the generic hyperloop <code>Component</code></p>
+<h3 id="step-14-styling"><a name="user-content-step-14-styling" href="#step-14-styling" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 1.4: Styling</h3>
+<p>Before going further and play with the <code>Component</code>, we will add some style and logo.</p>
+<p>We are going to add an <strong>Hyperloop</strong> logo. To do that you can replace the generic code of the <code>Helloword</code> Component by this one:</p>
+<pre><code class="ruby">#/app/hyperloop/components/helloworld.rb
+
+class Helloworld &lt; Hyperloop::Component
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { &quot;The complete isomorphic ruby framework&quot; }
+      BR{}
+
+    end
+
+  end
+
+end
+
+</code></pre>
+
+<p>And load 2 stylesheets:</p>
+<p><pre><code class="erb">#app/views/layouts/application.html.erb
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;HyperloopRailsHelloworld&lt;/title&gt;
+    &lt;%= csrf_meta_tags %&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css&quot; integrity=&quot;sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ&quot; crossorigin=&quot;anonymous&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/style.css&quot; &gt;
+
+    &lt;%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %&gt;
+    &lt;%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;%= yield %&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre><br />
+<br></p>
+<p>So, for this step, the <code>Component</code> code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 1.4 Helloworld Component" 
+  data-rows=16
+  data-top-level-component="HelloworldComponent1.4">
+
+<pre>
+#/app/hyperloop/components/helloworld.rb
+
+class Helloworld < Hyperloop::Component
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { "The complete isomorphic ruby framework" }
+      BR{}
+
+    end
+
+  end
+
+end
+
+</pre>
+</div>
+
+<p><br><br />
+<br></p>
+<h2 id="chapter-2-first-hyperloop-component"><a name="user-content-chapter-2-first-hyperloop-component" href="#chapter-2-first-hyperloop-component" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="chapter2"><div class="hyperlogoalone"><img src="/images/HyperComponents.png" width="50" alt="Hypercomponents"></div>Chapter 2: First Hyperloop Component</a></h2>
+<h3 id="step-21-introduction"><a name="user-content-step-21-introduction" href="#step-21-introduction" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 2.1: Introduction</h3>
+<p>Hyperloop Components are subclasses of <code>Hyperloop::Component</code>.<br><br />
+<a href="http://ruby-hyperloop.io/docs/components/dsl-overview/">{ Hyperloop Components documentation }</a></p>
+<p>We are going to improve our <code>Helloworld</code> component and play with <code>state</code> params, which allows us to easily change the value of a variable and so create interactive interface.</p>
+<p>This <code>Component</code> will display a button which can be clicked to toggle an input field. Then when typing in this field the content of it will be displayed below.</p>
+<h3 id="step-22-basic-elements"><a name="user-content-step-22-basic-elements" href="#step-22-basic-elements" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 2.2: Basic elements</h3>
+<p>Update the <code>Component</code> file as below:</p>
+<pre><code class="ruby">#/app/hyperloop/components/helloworld.rb
+
+class Helloworld &lt; Hyperloop::Component
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { &quot;The complete isomorphic ruby framework&quot; }
+      BR{}
+
+      show_button
+      DIV(class: 'formdiv') do
+        show_input
+        show_text
+      end
+
+    end
+
+  end
+
+  def show_button
+    BUTTON(class: 'btn btn-info') do
+      &quot;Toggle button&quot;
+    end
+  end
+
+  def show_input
+
+    H4 do 
+      SPAN{'Please type '}
+      SPAN(class: 'colored') {'Hello World'}
+      SPAN{' in the input field below :'}
+      BR {}
+      SPAN{'Or anything you want (^̮^)'}
+    end
+
+    INPUT(type: :text, class: 'form-control')
+
+  end
+
+  def show_text
+    H1 { &quot;input field value will be displayed here&quot; }
+  end
+
+end
+
+</code></pre>
+
+<h3 id="step-23-the-toggle-button"><a name="user-content-step-23-the-toggle-button" href="#step-23-the-toggle-button" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 2.3: The toggle button</h3>
+<p>We are going to introduce a <code>state</code> param in order to get our toggle button working.</p>
+<p>We will declare the <code>show_field</code> state param (with a default value equal to <code>false</code>) like this:</p>
+<pre><code class="ruby">state show_field: false
+</code></pre>
+
+<p>Then this <code>state</code> param value can be read like this:</p>
+<pre><code class="ruby">state.show_field
+</code></pre>
+
+<p>And can be changed like that:</p>
+<p><pre><code class="ruby">mutate.show_field
+</code></pre><br />
+<br></p>
+<p>So, for this step, the <code>Component</code> code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 2.3 Helloworld Component" 
+  data-rows=16
+  data-top-level-component="HelloworldComponent2-3">
+
+<pre>
+#/app/hyperloop/components/helloworld.rb
+
+class Helloworld < Hyperloop::Component
+
+  state show_field: false
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { "The complete isomorphic ruby framework" }
+      BR{}
+
+      show_button
+      DIV(class: 'formdiv') do
+        show_input
+        show_text
+      end if state.show_field
+
+    end
+
+  end
+
+  def show_button
+    BUTTON(class: 'btn btn-info') do
+      state.show_field ? "Click to hide HelloWorld input field" : "Click to show HelloWorld input field"
+    end.on(:click) { mutate.show_field !state.show_field }
+  end
+
+  def show_input
+
+    H4 do 
+      SPAN{'Please type '}
+      SPAN(class: 'colored') {'Hello World'}
+      SPAN{' in the input field below :'}
+      BR {}
+      SPAN{'Or anything you want (^̮^)'}
+    end
+
+    INPUT(type: :text, class: 'form-control')
+
+  end
+
+  def show_text
+    H1 { "input field value will be displayed here" }
+  end
+
+end
+
+</pre>
+</div>
+
+<p>Refresh your browser page, and try the new toggle button.</p>
+<h3 id="step-24-the-input-field"><a name="user-content-step-24-the-input-field" href="#step-24-the-input-field" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 2.4: The input field</h3>
+<p>This time we are going to introduce a <code>field_value</code> state param with an empty default value:</p>
+<pre><code class="ruby">state field_value: &quot;&quot;
+</code></pre>
+
+<p>Then we are going to get the input field value and update the <code>field_value</code> state accordingly with the <code>mutate</code> instruction:</p>
+<p><pre><code class="ruby">INPUT(type: :text, class: 'form-control').on(:change) do |e|
+  mutate.field_value e.target.value
+end
+</code></pre><br />
+<br></p>
+<p>So, for this step, the <code>Component</code> code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 2.4 Helloworld Component" 
+  data-rows=16
+  data-top-level-component="HelloworldComponent2-4">
+
+<pre>
+#/app/hyperloop/components/helloworld.rb
+
+class Helloworld < Hyperloop::Component
+
+  state show_field: false
+  state field_value: ""
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { "The complete isomorphic ruby framework" }
+      BR{}
+
+      show_button
+      DIV(class: 'formdiv') do
+        show_input
+        show_text
+      end if state.show_field
+
+    end
+
+  end
+
+  def show_button
+    BUTTON(class: 'btn btn-info') do
+      state.show_field ? "Click to hide HelloWorld input field" : "Click to show HelloWorld input field"
+    end.on(:click) { mutate.show_field !state.show_field }
+  end
+
+  def show_input
+
+    H4 do 
+      SPAN{'Please type '}
+      SPAN(class: 'colored') {'Hello World'}
+      SPAN{' in the input field below :'}
+      BR {}
+      SPAN{'Or anything you want (^̮^)'}
+    end
+
+    INPUT(type: :text, class: 'form-control').on(:change) do |e|
+      mutate.field_value e.target.value
+    end
+
+  end
+
+  def show_text
+    H1 { "input field value will be displayed here" }
+  end
+
+end
+
+</pre>
+</div>
+
+<p>If you refresh your browser page and type something in the INPUT field, nothing will be displayed below. it&rsquo;s because we need to update the <code>show_text</code> method in order to display the <code>show_field</code> state param value.</p>
+<h3 id="step-25-displaying-the-input-field-value"><a name="user-content-step-25-displaying-the-input-field-value" href="#step-25-displaying-the-input-field-value" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 2.5: Displaying the input field value</h3>
+<p>We just need to update the method like this: </p>
+<p><pre><code class="ruby">def show_text
+  H1 { &quot;#{state.field_value}&quot; }
+end
+</code></pre><br />
+<br></p>
+<p>So, for this step, the <code>Component</code> code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 2.5 Helloworld Component" 
+  data-rows=16
+  data-top-level-component="HelloworldComponent2-5">
+
+<pre>
+#/app/hyperloop/components/helloworld.rb
+
+class Helloworld < Hyperloop::Component
+
+  state show_field: false
+  state field_value: ""
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { "The complete isomorphic ruby framework" }
+      BR{}
+
+      show_button
+      DIV(class: 'formdiv') do
+        show_input
+        show_text
+      end if state.show_field
+
+    end
+
+  end
+
+  def show_button
+    BUTTON(class: 'btn btn-info') do
+      state.show_field ? "Click to hide HelloWorld input field" : "Click to show HelloWorld input field"
+    end.on(:click) { mutate.show_field !state.show_field }
+  end
+
+  def show_input
+
+    H4 do 
+      SPAN{'Please type '}
+      SPAN(class: 'colored') {'Hello World'}
+      SPAN{' in the input field below :'}
+      BR {}
+      SPAN{'Or anything you want (^̮^)'}
+    end
+
+    INPUT(type: :text, class: 'form-control').on(:change) do |e|
+      mutate.field_value e.target.value
+    end
+
+  end
+
+  def show_text
+    H1 { "#{state.field_value}" }
+  end
+
+end
+
+</pre>
+</div>
+
+<h3 id="step-26-testing-your-app"><a name="user-content-step-26-testing-your-app" href="#step-26-testing-your-app" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 2.6: Testing your app</h3>
+<p>Refresh the browser page and try !</p>
+<p>Have you seen how it&rsquo;s easy to play with the DOM without any javascript or JQuery piece of code. All in awesome RUBY !</p>
+<p><br><br />
+<br></p>
+<h2 id="chapter-3-hyperloops-jquery-wrapper"><a name="user-content-chapter-3-hyperloops-jquery-wrapper" href="#chapter-3-hyperloops-jquery-wrapper" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="chapter3"><div class="hyperlogoalone"><img src="/images/hyperloop-logo-small-pink.png" width="50" alt="Hyperloop"></div>Chapter 3: Hyperloop&rsquo;s jQuery wrapper</a></h2>
+<h3 id="step-31-introduction"><a name="user-content-step-31-introduction" href="#step-31-introduction" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 3.1: Introduction</h3>
+<p>In order to manipulate DOM nodes in your RUBY code and particularly in your Components, you can use the <strong><code>Element</code></strong> class, which is a Hyperloop&rsquo;s jQuery wrapper.</p>
+<p>As an example we will use it in order to Hide and Show the Hyperloop logo when clicking on the <code>toggle button</code>.</p>
+<h3 id="step-32-showinghiding-the-hyperloop-logo"><a name="user-content-step-32-showinghiding-the-hyperloop-logo" href="#step-32-showinghiding-the-hyperloop-logo" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 3.2: Showing/Hiding the Hyperloop logo</h3>
+<p>For doing that we will add a <code>toggle_logo(ev)</code> method, called by the <code>toggle_button</code> click event:</p>
+<pre><code class="ruby">def show_button
+  BUTTON(class: 'btn btn-info') do
+    state.show_field ? &quot;Click to hide HelloWorld input field&quot; : &quot;Click to show HelloWorld input field&quot;
+  end.on(:click) do |ev|
+    mutate.show_field !state.show_field 
+    toggle_logo(ev)
+  end
+end
+</code></pre>
+
+<p>And inside this method we will get the logo node and use the JQuery method to Show or Hide this element.</p>
+<pre><code class="ruby">def toggle_logo(ev)
+    ev.prevent_default
+    logo = Element['img']
+    state.show_field ? logo.hide('slow') : logo.show('slow')
+end
+</code></pre>
+
+<p>As you can see, we first test the <code>state.show_field</code> value, if it&rsquo;s <code>True</code>, we hide the logo, if not, we show it.</p>
+<p><br></p>
+<p>So, for this step, the <code>Component</code> code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 3.2 Helloworld Component" 
+  data-rows=16
+  data-top-level-component="HelloworldComponent3.2">
+
+<pre>
+#/app/hyperloop/components/helloworld.rb
+
+class Helloworld < Hyperloop::Component
+
+  state show_field: false
+  state field_value: ""
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { "The complete isomorphic ruby framework" }
+      BR{}
+
+      show_button
+      DIV(class: 'formdiv') do
+        show_input
+        show_text
+      end if state.show_field
+
+    end
+
+  end
+
+  def toggle_logo(ev)
+    ev.prevent_default
+    logo = Element['img']
+    state.show_field ? logo.hide('slow') : logo.show('slow')
+  end
+
+  def show_button
+    BUTTON(class: 'btn btn-info') do
+      state.show_field ? "Click to hide HelloWorld input field" : "Click to show HelloWorld input field"
+    end.on(:click) do |ev|
+      mutate.show_field !state.show_field 
+      toggle_logo(ev)
+    end
+  end
+
+  def show_input
+
+    H4 do 
+      SPAN{'Please type '}
+      SPAN(class: 'colored') {'Hello World'}
+      SPAN{' in the input field below :'}
+      BR {}
+      SPAN{'Or anything you want (^̮^)'}
+    end
+
+    INPUT(type: :text, class: 'form-control').on(:change) do |e|
+      mutate.field_value e.target.value
+    end
+
+  end
+
+  def show_text
+    H1 { "#{state.field_value}" }
+  end
+
+end
+
+</pre>
+</div>
+
+<p>You can refresh and see the logo Hidden or Showed slowly when clicking on the <code>toggle_button</code>.</p>
+<p>You can of course try others JQuery methods in order to play with elements of your page.</p>
+<p><br><br />
+<br></p>
+<h2 id="chapter-4-first-hyperloop-store"><a name="user-content-chapter-4-first-hyperloop-store" href="#chapter-4-first-hyperloop-store" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="chapter4"><div class="hyperlogoalone"><img src="/images/HyperStores.png" width="50" alt="Hyperloop"></div>Chapter 4: First Hyperloop Store</a></h2>
+<h3 id="step-41-introduction"><a name="user-content-step-41-introduction" href="#step-41-introduction" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 4.1: Introduction</h3>
+<p>Hyperloop Stores are subclasses of <code>Hyperloop::Store</code>.<br><br />
+<a href="http://ruby-hyperloop.io/docs/stores/overview/">{ Hyperloop Stores documentation }</a></p>
+<p>Hyperloop Stores exist to hold local application state. Components read state from Stores and render accordingly.</p>
+<p>In Chapter 2, we saw that Hyperloop <code>Component</code> can also hold local variable state, but it is tied to the <code>Component</code> itself. With a <code>Store</code>, application state can be shared by others <code>Components</code>.</p>
+<h3 id="step-42-creating-the-store"><a name="user-content-step-42-creating-the-store" href="#step-42-creating-the-store" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 4.2: Creating the Store</h3>
+<p>The first step is to create a <code>Store</code> in the Hyperloop&rsquo;s stores directory and declare the 2 <code>state</code> we need:</p>
+<pre><code class="ruby">#/app/hyperloop/stores/mystore.rb
+
+class MyStore &lt; Hyperloop::Store
+
+  state show_field: false, reader: true, scope: :class
+  state :field_value, reader: true, scope: :class
+
+end
+</code></pre>
+
+<p>You can see the documentation or others tutorials to understand what are the <code>reader: true, scope: :class</code> we added in the state declaration. For now, let&rsquo;s learn the basics.</p>
+<p>Then we will update the <code>Component</code> code for using the new <code>Store</code> state variables instead of using its own one.</p>
+<p>We will replace all <code>state.show_field</code> by <code>MyStore.show_field</code> and all <code>mutate.show_field</code> by <code>MyStore.mutate.show_field</code>. The same of course for the <code>field_value</code> variable.</p>
+<p><br></p>
+<p>So, for this step, the <code>Component</code> code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 4.2 Helloworld Component" 
+  data-rows=16
+  data-top-level-component="HelloworldComponent4.2">
+
+<pre>
+#/app/hyperloop/components/mystore.rb
+
+
+class Helloworld < Hyperloop::Component
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { "The complete isomorphic ruby framework" }
+      BR{}
+
+      show_button
+      DIV(class: 'formdiv') do
+        show_input
+        show_text
+      end if MyStore.show_field
+
+    end
+
+  end
+
+  def toggle_logo(ev)
+    ev.prevent_default
+    logo = Element['img']
+    MyStore.show_field ? logo.hide('slow') : logo.show('slow')
+  end
+
+  def show_button
+    BUTTON(class: 'btn btn-info') do
+      MyStore.show_field ? "Click to hide HelloWorld input field" : "Click to show HelloWorld input field"
+    end.on(:click) do |ev|
+      MyStore.mutate.show_field !MyStore.show_field 
+      toggle_logo(ev)
+    end
+  end
+
+  def show_input
+
+    H4 do 
+      SPAN{'Please type '}
+      SPAN(class: 'colored') {'Hello World'}
+      SPAN{' in the input field below :'}
+      BR {}
+      SPAN{'Or anything you want (^̮^)'}
+    end
+
+    INPUT(type: :text, class: 'form-control').on(:change) do |e|
+      MyStore.mutate.field_value e.target.value
+    end
+
+  end
+
+  def show_text
+    H1 { "#{MyStore.field_value}" }
+  end
+
+end
+
+</pre>
+</div>
+
+<h3 id="step-43-adding-a-method-to-the-store"><a name="user-content-step-43-adding-a-method-to-the-store" href="#step-43-adding-a-method-to-the-store" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 4.3: Adding a method to the Store</h3>
+<p>Often, it can be useful to add a method to a <code>Store</code>, which can be called from any components and which contains all logic relative to the <code>state</code> variables manipulation.</p>
+<p>We add the method <code>toggle_field</code> to <code>MyStore</code>: </p>
+<pre><code class="ruby">#/app/hyperloop/stores/mystore.rb
+
+class MyStore &lt; Hyperloop::Store
+
+  state show_field: false, reader: true, scope: :class
+  state :field_value, reader: true, scope: :class
+
+  def self.toggle_field
+    mutate.show_field !show_field
+    mutate.field_value &quot;&quot;
+  end
+
+end
+</code></pre>
+
+<p>And in the <code>Component</code> (in the <code>show_button</code> method), instead of manipulating the <code>Store</code> variables we will let <code>MyStore</code> doing it by calling the <code>toggle_field</code> method.</p>
+<pre><code class="ruby">MyStore.mutate.show_field !MyStore.show_field
+</code></pre>
+
+<p>Replaced by:</p>
+<pre><code class="ruby">MyStore.toggle_field
+
+</code></pre>
+
+<p><br></p>
+<p>So, for this step, the <code>Component</code> code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 4.3 Helloworld Component" 
+  data-rows=16
+  data-top-level-component="HelloworldComponent4.3">
+
+<pre>
+#/app/hyperloop/components/helloworld.rb
+
+class Helloworld < Hyperloop::Component
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { "The complete isomorphic ruby framework" }
+      BR{}
+
+      show_button
+      DIV(class: 'formdiv') do
+        show_input
+        show_text
+      end if MyStore.show_field
+
+    end
+
+  end
+
+  def toggle_logo(ev)
+    ev.prevent_default
+    logo = Element['img']
+    MyStore.show_field ? logo.hide('slow') : logo.show('slow')
+  end
+
+  def show_button
+    BUTTON(class: 'btn btn-info') do
+      MyStore.show_field ? "Click to hide HelloWorld input field" : "Click to show HelloWorld input field"
+    end.on(:click) do |ev|
+      MyStore.toggle_field 
+      toggle_logo(ev)
+    end
+  end
+
+  def show_input
+
+    H4 do 
+      SPAN{'Please type '}
+      SPAN(class: 'colored') {'Hello World'}
+      SPAN{' in the input field below :'}
+      BR {}
+      SPAN{'Or anything you want (^̮^)'}
+    end
+
+    INPUT(type: :text, class: 'form-control').on(:change) do |e|
+      MyStore.mutate.field_value e.target.value
+    end
+
+  end
+
+  def show_text
+    H1 { "#{MyStore.field_value}" }
+  end
+
+end
+
+</pre>
+</div>
+
+<h3 id="step-44-components-sharing-the-store-state"><a name="user-content-step-44-components-sharing-the-store-state" href="#step-44-components-sharing-the-store-state" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 4.4: Components sharing the Store state.</h3>
+<p>We are now going to create a new Component named <code>InputBox</code>, and call it from our <code>helloworld</code> Component.<br />
+This <code>InputBox</code> Component will read/update some state of <code>MyStore</code>.</p>
+<p>We copy the code from the <code>show_input</code> method a create a new component with it:</p>
+<pre><code class="ruby">#/app/hyperloop/components/input_box.rb
+
+class InputBox &lt; Hyperloop::Component
+
+  def render
+
+    DIV do
+      H4 do 
+        SPAN{'Please type '}
+        SPAN(class: 'colored') {'Hello World'}
+        SPAN{' in the input field below :'}
+        BR {}
+        SPAN{'Or anything you want (^̮^)'}
+      end
+
+      INPUT(type: :text, value: MyStore.field_value, class: 'form-control').on(:change) do |e|
+        MyStore.mutate.field_value e.target.value
+      end
+
+    end
+
+  end
+
+end
+</code></pre>
+
+<p>And in the <code>Helloworld</code> Component, instead of calling the <code>show_input</code> method, we call the <code>InputBox()</code> Component.</p>
+<p><pre><code class="ruby">#/app/hyperloop/components/helloworld.rb
+
+render(DIV) do
+
+  DIV(class: 'hyperloophelloword') do
+
+    IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+    H3 { &quot;The complete isomorphic ruby framework&quot; }
+    BR{}
+
+    show_button
+    DIV(class: 'formdiv') do
+      InputBox()
+      show_text
+    end if MyStore.show_field
+
+  end
+
+end
+
+</code></pre><br />
+<br></p>
+<p>So, for this step, the <code>Component</code> code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 4.4 Helloworld Component" 
+  data-rows=16
+  data-top-level-component="HelloworldComponent4.4">
+
+<pre>
+#/app/hyperloop/components/helloworld.rb
+
+class Helloworld < Hyperloop::Component
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { "The complete isomorphic ruby framework" }
+      BR{}
+
+      show_button
+      DIV(class: 'formdiv') do
+        InputBox()
+        show_text
+      end if MyStore.show_field
+
+    end
+
+  end
+
+  def toggle_logo(ev)
+    ev.prevent_default
+    logo = Element['img']
+    MyStore.show_field ? logo.hide('slow') : logo.show('slow')
+  end
+
+  def show_button
+    BUTTON(class: 'btn btn-info') do
+      MyStore.show_field ? "Click to hide HelloWorld input field" : "Click to show HelloWorld input field"
+    end.on(:click) do |ev|
+      MyStore.toggle_field 
+      toggle_logo(ev)
+    end
+  end
+
+
+  def show_text
+    H1 { "#{MyStore.field_value}" }
+  end
+
+end
+
+</pre>
+</div>
+
+<p><br><br />
+<br></p>
+<h2 id="chapter-5-first-isomorphic-model"><a name="user-content-chapter-5-first-isomorphic-model" href="#chapter-5-first-isomorphic-model" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="chapter5"><div class="hyperlogoalone"><img src="/images/HyperModels.png" width="50" alt="Hyperloop"></div>Chapter 5: First Isomorphic Model</a></h2>
+<h3 id="step-51-introduction"><a name="user-content-step-51-introduction" href="#step-51-introduction" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 5.1: Introduction</h3>
+<p>With Hyperloop, your server side Models are directly accessible from your Components or Stores.<br><br />
+<a href="http://ruby-hyperloop.io/docs/models/overview/">{ Hyperloop Isomorphic Models documentation }</a></p>
+<p>We are going to create a Model associated to a Table inside your database with one column.<br />
+And we will see how we can easily read, update, create or delete any values of your Model, just like Ruby On Rails can do with ActiveRecord on the server side.</p>
+<h3 id="step-52-setting-things-up"><a name="user-content-step-52-setting-things-up" href="#step-52-setting-things-up" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 5.2: Setting things up</h3>
+<p>Be sure to stop your Rails app server (CTRL-C) before continuing.</p>
+<p>Create your Model:</p>
+<pre><code>rails generate model Helloworldmodel description:string
+</code></pre>
+
+<p>Migrate your database:</p>
+<pre><code>rails db:migrate
+</code></pre>
+
+<p>Move these 2 files:</p>
+<pre><code>mv app/models/application_record.rb app/hyperloop/models
+mv app/models/helloworldmodel.rb app/hyperloop/models
+</code></pre>
+
+<p>You can restart your Rails server now. (Note: when lot of files has been created or modified in your Hyperloop directory, it can be usefull to clear the Rails app cache <code>rm -rf tmp/cache</code>, then when restarting your Rails app server, Hyperloop will re-precompile all files)</p>
+<h3 id="step-53-saving-the-input-field-content-into-the-database"><a name="user-content-step-53-saving-the-input-field-content-into-the-database" href="#step-53-saving-the-input-field-content-into-the-database" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 5.3: Saving the input field content into the database</h3>
+<p>We are going to add a <code>Save</code> button close to the input field and implement the method in order to save the content into the <code>description</code> attribute of HelloworldModels table.</p>
+<p>We add the <code>save</code> button and call the <code>Helloworld</code> save_description method that we will implement soon:</p>
+<pre><code class="ruby">#/app/hyperloop/components/input_box.rb
+
+class InputBox &lt; Hyperloop::Component
+
+  def render
+
+    DIV do
+      H4 do 
+        SPAN{'Please type '}
+        SPAN(class: 'colored') {'Hello World'}
+        SPAN{' in the input field below :'}
+        BR {}
+        SPAN{'Or anything you want (^̮^)'}
+      end
+
+      INPUT(type: :text, value: MyStore.field_value, class: 'form-control').on(:change) do |e|
+        MyStore.mutate.field_value e.target.value
+      end
+
+      BUTTON(class: 'btn btn-info') do
+        &quot;Save&quot;
+      end.on(:click) { Helloworld.save_description }
+
+    end
+
+  end
+
+end
+
+</code></pre>
+
+<p>We add the <code>save_description</code> method, which follow the ActiveRecord model for creating a record into the database. </p>
+<p><pre><code class="ruby">#/app/hyperloop/components/helloworld.rb
+
+def self.save_description
+  Helloworldmodel.create(:description =&gt; MyStore.field_value) do |result|
+    alert &quot;unable to save&quot; unless result == true
+  end
+  alert(&quot;Data saved : #{MyStore.field_value}&quot;)
+  MyStore.mutate.field_value &quot;&quot;
+end
+</code></pre><br />
+<br></p>
+<p>So, for this step, the <code>Component</code> code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 5.3 Helloworld Component" 
+  data-rows=16
+  data-top-level-component="HelloworldComponent5.3">
+
+<pre>
+#/app/hyperloop/components/helloworld.rb
+
+class Helloworld < Hyperloop::Component
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { "The complete isomorphic ruby framework" }
+      BR{}
+
+      show_button
+      DIV(class: 'formdiv') do
+        InputBox()
+        show_text
+      end if MyStore.show_field
+
+    end
+
+  end
+
+  def toggle_logo(ev)
+    ev.prevent_default
+    logo = Element['img']
+    MyStore.show_field ? logo.hide('slow') : logo.show('slow')
+  end
+
+  def show_button
+    BUTTON(class: 'btn btn-info') do
+      MyStore.show_field ? "Click to hide HelloWorld input field" : "Click to show HelloWorld input field"
+    end.on(:click) do |ev|
+      MyStore.toggle_field 
+      toggle_logo(ev)
+    end
+  end
+
+  def show_text
+    H1 { "#{MyStore.field_value}" }
+  end
+
+  def self.save_description
+    Helloworldmodel.create(:description => MyStore.field_value) do |result|
+      alert "unable to save" unless result == true
+    end
+    alert("Data saved : #{MyStore.field_value}")
+    MyStore.mutate.field_value ""
+  end
+
+end
+
+</pre>
+</div>
+
+<p>Refresh you browser page and try typing <code>Hello USA</code> into the Input field and click the <code>save</code> button.</p>
+<h3 id="step-54-listing-the-saved-data"><a name="user-content-step-54-listing-the-saved-data" href="#step-54-listing-the-saved-data" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 5.4: Listing the saved data</h3>
+<p>We are going to add a TABLE listing all <code>description</code> fields saved in our Database.</p>
+<p>For that we need first to load all these data from the database, and just before the <code>Helloworld</code> component will mounted.</p>
+<p>To do that, we will use the <code>before_mount</code> Hyperloop block. Everything put inside this block will be executed just before the rendering of the component.</p>
+<pre><code class="ruby">#/app/hyperloop/components/helloworld.rb
+
+before_mount do
+  @helloworldmodels = Helloworldmodel.all
+end
+
+</code></pre>
+
+<p>Then we will render the TABLE by calling a <code>description_table</code> method that we will put in our component as well and which will display each <code>description</code> record row by row:</p>
+<p><pre><code class="ruby">#/app/hyperloop/components/helloworld.rb
+
+render(DIV) do
+
+  DIV(class: 'hyperloophelloword') do
+
+    IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+    H3 { &quot;The complete isomorphic ruby framework&quot; }
+    BR{}
+
+    show_button
+    DIV(class: 'formdiv') do
+      InputBox()
+      show_text
+    end if MyStore.field_displayed
+    description_table
+
+  end
+
+end
+
+def description_table
+  DIV do
+    BR
+    TABLE(class: 'table table-hover table-condensed') do
+      THEAD do
+        TR(class: 'table-danger') do
+          TD(width: '33%') { &quot;SAVED HELLO WORLD&quot; }
+        end
+      end
+      TBODY do
+        @helloworldmodels.each do |helloworldmodel|
+          TR(class: 'table-success') do
+            TD(width: '50%') { helloworldmodel.description }
+          end
+        end
+      end
+    end
+  end
+end
+
+</code></pre><br />
+<br></p>
+<p>So, for this step, the <code>Component</code> code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 5.4 Helloworld Component" 
+  data-rows=16
+  data-top-level-component="HelloworldComponent5.4">
+
+<pre>
+#/app/hyperloop/components/helloworld.rb
+
+class Helloworld < Hyperloop::Component
+
+  before_mount do
+    @helloworldmodels = Helloworldmodel.all
+  end
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { "The complete isomorphic ruby framework" }
+      BR{}
+
+      show_button
+      DIV(class: 'formdiv') do
+        InputBox()
+        show_text
+      end if MyStore.show_field
+      description_table
+
+    end
+
+  end
+
+  def toggle_logo(ev)
+    ev.prevent_default
+    logo = Element['img']
+    MyStore.show_field ? logo.hide('slow') : logo.show('slow')
+  end
+
+  def show_button
+    BUTTON(class: 'btn btn-info') do
+      MyStore.show_field ? "Click to hide HelloWorld input field" : "Click to show HelloWorld input field"
+    end.on(:click) do |ev|
+      MyStore.toggle_field 
+      toggle_logo(ev)
+    end
+  end
+
+  def show_text
+    H1 { "#{MyStore.field_value}" }
+  end
+
+  def self.save_description
+    Helloworldmodel.create(:description => MyStore.field_value) do |result|
+      alert "unable to save" unless result == true
+    end
+    alert("Data saved : #{MyStore.field_value}")
+    MyStore.mutate.field_value ""
+  end
+
+  def description_table
+    DIV do
+      BR
+      TABLE(class: 'table table-hover table-condensed') do
+        THEAD do
+          TR(class: 'table-danger') do
+            TD(width: '33%') { "SAVED HELLO WORLD" }
+          end
+        end
+        TBODY do
+          @helloworldmodels.each do |helloworldmodel|
+            TR(class: 'table-success') do
+              TD(width: '50%') { helloworldmodel.description }
+            end
+          end
+        end
+      end
+    end
+  end
+
+end
+
+</pre>
+</div>
+
+<p>Refresh you browser page and you should see the Table listing your previous <code>Hello USA</code>. Try to add another <code>Nihao China</code> into your input field, then after clicking the SAVE button, you will see that the Table listing is automatically updated.</p>
+<h3 id="step-55-push-notifications-mechanism"><a name="user-content-step-55-push-notifications-mechanism" href="#step-55-push-notifications-mechanism" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 5.5: Push notifications mechanism</h3>
+<p>Hyperloop includes by default a push notifications mechanism. Components datas are directly updated via browsers <code>Web Sockets</code>. Of course everything is parametrable, like which mechanism you want to use (Action-cable, pusher, &hellip;) and more important, Hyperloop uses Policies to regulate what connections are opened between clients and the server and what data is distributed over those connections.<br />
+<br><br />
+<a href="http://ruby-hyperloop.io/docs/models/configuring-transport/">{ Configuring Push notifications transport }</a><br />
+<br><br />
+<a href="http://ruby-hyperloop.io/docs/policies/authorization/">{ Hyperloop Policies }</a></p>
+<p>In order to see Puch Notifications in action, you just have to open 2 different browsers, go to <code>http://localhost:3000</code> on each browser, add and save a message in the input field, and you will see that the saved record will be displayed directly in both browsers.</p>
+<h3 id="step-56-simplfiying-code-by-adding-another-component"><a name="user-content-step-56-simplfiying-code-by-adding-another-component" href="#step-56-simplfiying-code-by-adding-another-component" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 5.6: Simplfiying code by adding another Component</h3>
+<p>We are going to add another <code>Component</code> in order to simplify the code and to show how <code>Components</code> can be nested.</p>
+<p>Modify the <code>description_table</code> like that:</p>
+<pre><code class="ruby">#/app/hyperloop/components/helloworld.rb
+
+def description_table
+
+  DIV do
+    BR
+    TABLE(class: 'table table-hover table-condensed') do
+      THEAD do
+        TR(class: 'table-danger') do
+          TD(width: '33%') { &quot;SAVED HELLO WORLD&quot; }
+        end
+      end
+      TBODY do
+        @helloworldmodels.each do |helloworldmodel|
+          DescriptionRow(descriptionparam: helloworldmodel.description)
+        end
+      end
+    end
+  end
+
+end
+
+</code></pre>
+
+<p>We now mount a new <code>DescriptionRow</code> component and pass a parameter containing the <code>description</code> field value.</p>
+<p>We now create this new <code>DescriptionRow</code> component:</p>
+<p><pre><code class="ruby">#/app/hyperloop/components/description_row.rb
+
+class DescriptionRow &lt; Hyperloop::Component
+
+  param :descriptionparam
+
+  def render
+    TR(class: 'table-success') do
+      TD(width: '50%') { params.descriptionparam }
+    end
+  end
+
+end
+
+</code></pre><br />
+<br></p>
+<p>So, for this step, the <code>Component</code> code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 5.6 Helloworld Component" 
+  data-rows=16
+  data-top-level-component="HelloworldComponent5.6">
+
+<pre>
+#/app/hyperloop/components/helloworld.rb
+
+
+class Helloworld < Hyperloop::Component
+
+  before_mount do
+    @helloworldmodels = Helloworldmodel.all
+  end
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { "The complete isomorphic ruby framework" }
+      BR{}
+
+      show_button
+      DIV(class: 'formdiv') do
+        InputBox()
+        show_text
+      end if MyStore.show_field
+      description_table
+
+    end
+
+  end
+
+  def toggle_logo(ev)
+    ev.prevent_default
+    logo = Element['img']
+    MyStore.show_field ? logo.hide('slow') : logo.show('slow')
+  end
+
+  def show_button
+    BUTTON(class: 'btn btn-info') do
+      MyStore.show_field ? "Click to hide HelloWorld input field" : "Click to show HelloWorld input field"
+    end.on(:click) do |ev|
+      MyStore.toggle_field 
+      toggle_logo(ev)
+    end
+  end
+
+  def show_text
+    H1 { "#{MyStore.field_value}" }
+  end
+
+  def self.save_description
+    Helloworldmodel.create(:description => MyStore.field_value) do |result|
+      alert "unable to save" unless result == true
+    end
+    alert("Data saved : #{MyStore.field_value}")
+    MyStore.mutate.field_value ""
+  end
+
+  def description_table
+    DIV do
+      BR
+      TABLE(class: 'table table-hover table-condensed') do
+        THEAD do
+          TR(class: 'table-danger') do
+            TD(width: '33%') { "SAVED HELLO WORLD" }
+          end
+        end
+        TBODY do
+          @helloworldmodels.each do |helloworldmodel|
+            DescriptionRow(descriptionparam: helloworldmodel.description)
+          end
+        end
+      end
+    end
+  end
+
+end
+
+</pre>
+</div>
+
+<p><br><br />
+<br></p>
+<h2 id="chapter-6-first-hyperloop-operation"><a name="user-content-chapter-6-first-hyperloop-operation" href="#chapter-6-first-hyperloop-operation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="chapter6"><div class="hyperlogoalone"><img src="/images/HyperOperations.png" width="50" alt="Hyperloop"></div>Chapter 6: First Hyperloop Operation</a></h2>
+<h3 id="step-61-introduction"><a name="user-content-step-61-introduction" href="#step-61-introduction" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 6.1: Introduction</h3>
+<p>Hyperloop Operations classes are subclasses of <code>Hyperloop::Operation</code>.<br><br />
+<a href="http://ruby-hyperloop.io/docs/operations/overview/">{ Hyperloop Operations documentation}</a></p>
+<p><code>Operations</code> are the engine rooms of Hyperloop, they orchestrate the interactions between <code>Components</code>, external services, Models and Stores. <strong>Operations are where your business logic lives</strong>.</p>
+<p><code>Operations</code> start to be very usefull when your application is becoming complex with lot of interactions between <code>Components</code>, <code>Models</code> and <code>Stores</code>.</p>
+<p>So the using of <code>Operations</code> in our Tutorial could seem inappropriate, but it allows us to introduce the syntax and gives us a preview of its utility.</p>
+<p>You will have a better idea of the power of <code>Operations</code> by following these 2 Tutorials:<br><br />
+<a href="http://ruby-hyperloop.io/tutorials/hyperlooprails/fivelettergame/">{ Five letters game tutorial }</a><br><br />
+<a href="http://ruby-hyperloop.io/tutorials/hyperlooprails/chatapp/">{ Chat App Tutorial }</a></p>
+<h3 id="step-62-the-showbutton-operation"><a name="user-content-step-62-the-showbutton-operation" href="#step-62-the-showbutton-operation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 6.2: The ShowButton Operation</h3>
+<p>We are going to let an <code>Operation</code> do the business logic happening when clicking on the <code>Show input field</code> button.</p>
+<p>We are going to replace:</p>
+<pre><code class="ruby">#/app/hyperloop/components/helloworld.rb
+
+def show_button
+  BUTTON(class: 'btn btn-info') do
+    MyStore.field_displayed ? &quot;Click to hide HelloWorld input field&quot; : &quot;Click to show HelloWorld input field&quot;
+  end.on(:click) do |ev|
+    MyStore.toggle_field
+    toggle_logo(ev)
+  end
+end
+
+</code></pre>
+
+<p>By</p>
+<pre><code class="ruby">#/app/hyperloop/components/helloworld.rb
+
+def show_button
+  BUTTON(class: 'btn btn-info') do
+    MyStore.field_displayed ? &quot;Click to hide HelloWorld input field&quot; : &quot;Click to show HelloWorld input field&quot;
+  end.on(:click) do |ev|
+    ShowButtonOp.run(ev: ev)
+  end
+end
+</code></pre>
+
+<p>You can see the line:</p>
+<pre><code class="ruby">ShowButtonOp.run(ev: ev)
+</code></pre>
+
+<p>Which will run the <code>ShowButtonOp</code> Operation with passing the <code>event</code> as a parameter.</p>
+<p>We create the <code>show_button_op.rb</code> file and the <code>ShowButtonOp</code> Class:</p>
+<pre><code class="ruby">#/app/hyperloop/operations/show_button_op.rb
+
+class ShowButtonOp &lt; Hyperloop::Operation
+
+  param :ev
+
+  step { MyStore.toggle_field }
+  step { Helloworld.toggle_logo(params.ev) }
+
+end
+
+</code></pre>
+
+<p>You can notice specific syntax: <code>Hyperloop::Operation</code> declaration and the <code>step</code> instruction. <a href="http://ruby-hyperloop.io/docs/operations/overview/#defining-execution-steps">{ Operations documentation }</a></p>
+<p>And one last modification, the <code>toggle_logo</code> definition method needs to be updated by adding <code>self</code>:</p>
+<pre><code class="ruby">def self.toggle_logo(ev)
+  ev.prevent_default
+  logo = Element['img']
+  MyStore.show_field ? logo.hide('slow') : logo.show('slow')
+end
+</code></pre>
+
+<p><br></p>
+<p>So, for this step, the <code>Component</code> code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 6.2 Helloworld Component" 
+  data-rows=16
+  data-top-level-component="HelloworldComponent6.2">
+
+<pre>
+#/app/hyperloop/components/helloworld.rb
+
+
+class Helloworld < Hyperloop::Component
+
+  before_mount do
+    @helloworldmodels = Helloworldmodel.all
+  end
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { "The complete isomorphic ruby framework" }
+      BR{}
+
+      show_button
+      DIV(class: 'formdiv') do
+        InputBox()
+        show_text
+      end if MyStore.show_field
+      description_table
+
+    end
+
+  end
+
+  def self.toggle_logo(ev)
+    ev.prevent_default
+    logo = Element['img']
+    MyStore.show_field ? logo.hide('slow') : logo.show('slow')
+  end
+
+  def show_button
+    BUTTON(class: 'btn btn-info') do
+      MyStore.show_field ? "Click to hide HelloWorld input field" : "Click to show HelloWorld input field"
+    end.on(:click) do |ev|
+      ShowButtonOp.run(ev: ev)
+    end
+  end
+
+  def show_text
+    H1 { "#{MyStore.field_value}" }
+  end
+
+  def self.save_description
+    Helloworldmodel.create(:description => MyStore.field_value) do |result|
+      alert "unable to save" unless result == true
+    end
+    alert("Data saved : #{MyStore.field_value}")
+    MyStore.mutate.field_value ""
+  end
+
+  def description_table
+    DIV do
+      BR
+      TABLE(class: 'table table-hover table-condensed') do
+        THEAD do
+          TR(class: 'table-danger') do
+            TD(width: '33%') { "SAVED HELLO WORLD" }
+          end
+        end
+        TBODY do
+          @helloworldmodels.each do |helloworldmodel|
+            DescriptionRow(descriptionparam: helloworldmodel.description)
+          end
+        end
+      end
+    end
+  end
+
+end
+
+</pre>
+</div>
+
+<h3 id="step-63-the-savedescriptionop-operation"><a name="user-content-step-63-the-savedescriptionop-operation" href="#step-63-the-savedescriptionop-operation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 6.3: The SaveDescriptionOp Operation</h3>
+<p>There is another business logic we can move to an <code>Operation</code>: The <code>save_description</code> method.</p>
+<pre><code class="ruby">#/app/hyperloop/components/helloworld.rb
+
+def self.save_description
+  Helloworldmodel.create(:description =&gt; MyStore.field_value) do |result|
+    alert &quot;unable to save&quot; unless result == true
+  end
+  alert(&quot;Data saved : #{MyStore.field_value}&quot;)
+  MyStore.mutate.field_value &quot;&quot;
+end
+
+</code></pre>
+
+<p>When clicking on the <code>Save</code> button, we will run an <code>Operation</code> which will Create the record into the Database then the <code>MyStore</code> Store will receive the signal that the <code>Operation</code> has been run succesfully, it will display the success message and mutate the <code>field_value</code> param.</p>
+<p>With this exemple you can see how <code>Operations</code> and <code>Stores</code> interact together.</p>
+<p>First, we remove the <code>save_description</code> method from the <code>Helloworld</code> component.</p>
+<p>Then we update the <code>InputBox</code> component, replacing <code>Helloworld.save_description</code> by <code>SaveDescriptionOp.run</code>:</p>
+<pre><code class="ruby">#/app/hyperloop/components/input_box.rb
+
+class InputBox &lt; Hyperloop::Component
+
+  def render
+
+    DIV do
+      H4 do 
+        SPAN{'Please type '}
+        SPAN(class: 'colored') {'Hello World'}
+        SPAN{' in the input field below :'}
+        BR {}
+        SPAN{'Or anything you want (^̮^)'}
+      end
+
+      INPUT(type: :text, value: MyStore.field_value, class: 'form-control').on(:change) do |e|
+        MyStore.mutate.field_value e.target.value
+      end
+
+      BUTTON(class: 'btn btn-info') do
+        &quot;Save&quot;
+      end.on(:click) { SaveDescriptionOp.run }
+
+    end
+
+  end
+
+end
+
+</code></pre>
+
+<p>We create the <code>save_description_op.rb</code> file:</p>
+<pre><code class="ruby">#/app/hyperloop/operations/save_description_op.rb
+
+class SaveDescriptionOp &lt; Hyperloop::Operation
+
+  step do
+
+    Helloworldmodel.create(:description =&gt; MyStore.field_value) do |result|
+      alert &quot;unable to save&quot; unless result == true
+    end
+
+  end
+
+end
+</code></pre>
+
+<p>And we update the Store <code>MyStore</code>:</p>
+<pre><code class="ruby">#/app/hyperloop/stores/mystore.rb
+
+class MyStore &lt; Hyperloop::Store
+
+  state show_field: false, reader: true, scope: :class
+  state :field_value, reader: true, scope: :class
+
+  def self.toggle_field
+    mutate.show_field !show_field
+    mutate.field_value &quot;&quot;
+  end
+
+  receives SaveDescriptionOp do 
+    alert(&quot;Data saved : #{MyStore.field_value}&quot;)
+    MyStore.mutate.field_value &quot;&quot;
+  end
+
+end
+
+</code></pre>
+
+<p>You can notice the <code>receives SaveDescriptionOp do .... end</code> block. <a href="http://ruby-hyperloop.io/docs/stores/overview/#receiving-operation-dispatches">{ Stores documentation }</a></p>
+<p><br></p>
+<p>So, for this step, the <code>Component</code> code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 6.3 Helloworld Component" 
+  data-rows=16
+  data-top-level-component="HelloworldComponent6.3">
+
+<pre>
+#/app/hyperloop/components/helloworld.rb
+
+class Helloworld < Hyperloop::Component
+
+  before_mount do
+    @helloworldmodels = Helloworldmodel.all
+  end
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { "The complete isomorphic ruby framework" }
+      BR{}
+
+      show_button
+      DIV(class: 'formdiv') do
+        InputBox()
+        show_text
+      end if MyStore.show_field
+      description_table
+
+    end
+
+  end
+
+  def toggle_logo(ev)
+    ev.prevent_default
+    logo = Element['img']
+    MyStore.show_field ? logo.hide('slow') : logo.show('slow')
+  end
+
+  def show_button
+    BUTTON(class: 'btn btn-info') do
+      MyStore.show_field ? "Click to hide HelloWorld input field" : "Click to show HelloWorld input field"
+    end.on(:click) do |ev|
+      ShowButtonOp.run(ev: ev)
+    end
+  end
+
+  def show_text
+    H1 { "#{MyStore.field_value}" }
+  end
+
+
+  def description_table
+    DIV do
+      BR
+      TABLE(class: 'table table-hover table-condensed') do
+        THEAD do
+          TR(class: 'table-danger') do
+            TD(width: '33%') { "SAVED HELLO WORLD" }
+          end
+        end
+        TBODY do
+          @helloworldmodels.each do |helloworldmodel|
+            DescriptionRow(descriptionparam: helloworldmodel.description)
+          end
+        end
+      end
+    end
+  end
+
+end
+
+
+
+</pre>
+</div>
+
+<p><br><br />
+<br></p>
+<h2 id="chapter-7-first-hyperloop-server-operation"><a name="user-content-chapter-7-first-hyperloop-server-operation" href="#chapter-7-first-hyperloop-server-operation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="chapter7"><div class="hyperlogoalone"><img src="/images/HyperOperations.png" width="50" alt="Hyperloop"></div>Chapter 7: First Hyperloop Server Operation</a></h2>
+<h3 id="step-71-introduction"><a name="user-content-step-71-introduction" href="#step-71-introduction" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.1: Introduction</h3>
+<p>Hyperloop Server Operations are subclasses of <code>Hyperloop::ServerOp</code>.<br><br />
+<a href="http://ruby-hyperloop.io/docs/operations/overview/#server-operations">{ Hyperloop Server Operations documentation }</a></p>
+<p><code>Operations</code> will run on the client or the server, but <code>Server Operations</code> will always run on the server even if invoked on the client.</p>
+<p><code>Server Operations</code> start to be usefull when your application becomes complex and needs, for example, Server side authorization, Server side payment or Server side files maniupulation.</p>
+<p>So for our simple tutorial it will be more question of being familiar with the syntax than implementing a useful fonctionality.</p>
+<p>You will have a better idea of the power of <code>Server Operations</code> by following this Tutorial:<br><br />
+<a href="http://ruby-hyperloop.io/tutorials/hyperlooprails/chatapp/">{ Chat App Tutorial }</a></p>
+<h3 id="step-72-what-functionality-we-will-implement"><a name="user-content-step-72-what-functionality-we-will-implement" href="#step-72-what-functionality-we-will-implement" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.2: What functionality we will implement ?</h3>
+<p>We will implement a simple Chatting functionality:</p>
+<ol>
+<li>Display a message INPUT field with a send button.</li>
+<li>Get all sent messages from the Rails Cache (<code>Rails.cache.fetch</code>) using a <code>Server Operation</code></li>
+<li>Save new messages in the Rails Cache (<code>Rails.cache.write</code>) using a <code>Server Operation</code></li>
+<li>Display all messages on the web page.</li>
+</ol>
+<h3 id="step-73-which-files-were-going-to-update-and-create"><a name="user-content-step-73-which-files-were-going-to-update-and-create" href="#step-73-which-files-were-going-to-update-and-create" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.3: Which files we&rsquo;re going to update and create ?</h3>
+<p>File we are going to update:</p>
+<p>1 Component:</p>
+<blockquote>
+<p><code>app/hyperloop/components/helloworld.rb</code></p>
+</blockquote>
+<p>Files we are going to create:</p>
+<p>3 Components: </p>
+<blockquote>
+<p><code>app/hyperloop/components/input_message.rb</code><br> <br />
+<code>app/hyperloop/components/messages.rb</code><br> <br />
+<code>app/hyperloop/components/message.rb</code> </p>
+</blockquote>
+<p>1 Store:</p>
+<blockquote>
+<p><code>app/hyperloop/stores/message_store.rb</code></p>
+</blockquote>
+<p>1 module (named <code>MessagesOperations</code>) containing 2 Server Operations:</p>
+<blockquote>
+<p><code>app/hyperloop/operations/messages_operations.rb</code></p>
+</blockquote>
+<h3 id="step-74-execution-cycles-description"><a name="user-content-step-74-execution-cycles-description" href="#step-74-execution-cycles-description" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.4: Execution cycles description</h3>
+<p>Our Chatting application will run 3 different and separate cycles:</p>
+<ol>
+<li>
+<p>The <code>Send</code> message cycle</p>
+<blockquote>
+<ul>
+<li>The <code>Helloworld</code> Component mounts the <code>InputMessage</code> component<br></li>
+<li>The <code>InputMessage</code> Component displays an input field and a send message BUTTON<br></li>
+<li>When clicked, the BUTTON runs the <code>Send</code> Server Operation<br></li>
+<li>The <code>Send</code> Server Operation is executed on the Server in order to write the message into the Rails Cache.<br></li>
+<li>The Store <code>MessageStore</code> (when it is aware the <code>Send</code> Server Operation is completed) add the last sent message to the state parameter <code>messages</code> in order to keep this variable up to date.</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>The <code>Get</code> messages cycle</p>
+<blockquote>
+<ul>
+<li>When the app is run for the first time in a browser page, the <code>GetMessages</code> Server Operation is run.<br></li>
+<li>The <code>GetMessages</code> Server Operation is executed on the Server in order to read all messages stored in the Rails Cache.</li>
+<li>The Store <code>MessageStore</code> (when it is aware the <code>GetMessages</code> Server Operation is completed) update the state parameter <code>messages</code> with all messages get from the Rails Cache.</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>The <code>Display</code> messages cycle</p>
+<blockquote>
+<ul>
+<li>The <code>Helloworld</code> Component mounts the <code>Messages</code> component<br></li>
+<li>The <code>Messages</code> Component, for each message stored in the state messages param, mounts the <code>Message</code> component<br></li>
+<li>The <code>Message</code> Component displays the message content on the page.</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h3 id="step-75-setting-rails-cache-up"><a name="user-content-step-75-setting-rails-cache-up" href="#step-75-setting-rails-cache-up" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.5: Setting Rails cache up</h3>
+<p>For the purpose of this tutorial we will configure our Rails app cache like this:</p>
+<pre><code class="ruby">#config/environments/development.rb
+
+if Rails.root.join('tmp/caching-dev.txt').exist?
+  config.action_controller.perform_caching = true
+
+  config.cache_store = :memory_store
+  config.public_file_server.headers = {
+    'Cache-Control' =&gt; 'public, max-age=172800'
+  }
+else
+  config.action_controller.perform_caching = true
+  config.cache_store = :file_store, &quot;tmp/cache&quot;
+end
+
+</code></pre>
+
+<h3 id="step-76-updating-the-helloword-component"><a name="user-content-step-76-updating-the-helloword-component" href="#step-76-updating-the-helloword-component" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.6: Updating the Helloword Component</h3>
+<p>In our <code>helloworld.rb</code> file we are going to:</p>
+<ol>
+<li>Mount the <code>InputMessage</code> component:</li>
+</ol>
+<pre><code class="ruby">#/app/hyperloop/components/helloworld.rb
+
+render(DIV) do
+    InputMessage()
+    ...
+    ...
+  end
+
+</code></pre>
+
+<ol>
+<li>Mount the <code>Messages</code> Component, if there are messages to display:</li>
+</ol>
+<pre><code class="ruby">#/app/hyperloop/components/helloworld.rb
+
+render(DIV) do
+  ...
+  ...
+  if MessageStore.messages?
+      Messages()
+  end
+end
+
+</code></pre>
+
+<p><code>MessageStore.messages?</code> is a method of the MessagesStore we will implement in the next steps.</p>
+<ol>
+<li>Run the <code>GetMessages</code> Operation to get all existing messages:</li>
+</ol>
+<pre><code class="ruby">#/app/hyperloop/components/helloworld.rb
+
+after_mount do
+  MessagesOperations::GetMessages.run
+end
+
+</code></pre>
+
+<p><code>after_mount</code> is a hyperloop block which is run just after the <code>helloworld</code> Component is mounted.</p>
+<p><code>MessagesOperations</code> is the name of the module we will create and containing the 2 Server Operations <code>Send</code> and <code>GetMessages</code>.</p>
+<p><br></p>
+<p>So, for this step, the <code>Component</code> code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 7.6 Helloworld Component" 
+  data-rows=16
+  data-top-level-component="HelloworldComponent7.6">
+
+<pre>
+#/app/hyperloop/components/helloworld.rb
+
+
+class Helloworld < Hyperloop::Component
+
+  before_mount do
+    @helloworldmodels = Helloworldmodel.all
+  end
+
+  after_mount do
+    MessagesOperations::GetMessages.run
+  end
+
+  render(DIV) do
+
+    DIV(class: 'hyperloophelloword') do
+
+      IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
+      H3 { "The complete isomorphic ruby framework" }
+      BR{}
+
+      InputMessage()
+      show_button
+      DIV(class: 'formdiv') do
+        InputBox()
+        show_text
+      end if MyStore.show_field
+
+      description_table
+
+      if MessageStore.messages?
+          Messages()
+      end
+
+    end
+
+  end
+
+  def self.toggle_logo(ev)
+    ev.prevent_default
+    logo = Element['img']
+    MyStore.show_field ? logo.hide('slow') : logo.show('slow')
+  end
+
+  def show_button
+    BUTTON(class: 'btn btn-info') do
+      MyStore.show_field ? "Click to hide HelloWorld input field" : "Click to show HelloWorld input field"
+    end.on(:click) do |ev|
+      ShowButtonOp.run(ev: ev)
+    end
+  end
+
+  def show_text
+    H1 { "#{MyStore.field_value}" }
+  end
+
+
+  def description_table
+    DIV do
+      BR
+      TABLE(class: 'table table-hover table-condensed') do
+        THEAD do
+          TR(class: 'table-danger') do
+            TD(width: '33%') { "SAVED HELLO WORLD" }
+          end
+        end
+        TBODY do
+          @helloworldmodels.each do |helloworldmodel|
+            DescriptionRow(descriptionparam: helloworldmodel.description)
+          end
+        end
+      end
+    end
+  end
+
+end
+
+</pre>
+</div>
+
+<h3 id="step-77-writing-the-inputmessage-component"><a name="user-content-step-77-writing-the-inputmessage-component" href="#step-77-writing-the-inputmessage-component" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.7: Writing the InputMessage Component</h3>
+<p>The <code>InputMessage</code> Component is very similar to the previous <code>InputBox</code> Component we wrote previously.</p>
+<p>We use a <code>message_field</code> state param in order to store the message Input field value;</p>
+<pre><code class="ruby">#/app/hyperloop/components/input_message.rb
+
+state message_field: &quot;Type your message here&quot;
+</code></pre>
+
+<p>And when the <code>Send</code> button is clicked we run the <code>Send</code> Operation with passing the <code>message_field</code> state value as a parameter:</p>
+<pre><code class="ruby">#/app/hyperloop/components/input_message.rb
+
+BUTTON(class: 'btn btn-warning') do
+  &quot;Send&quot;
+end.on(:click) do |ev|
+  MessagesOperations::Send(message: state.message_field)
+end
+</code></pre>
+
+<p><br></p>
+<p>The <code>InputMessage</code> Component code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 7.7 InputMessage Component" 
+  data-rows=16
+  data-top-level-component="InputMessageComponent7.7">
+
+<pre>
+#/app/hyperloop/components/input_message.rb
+
+
+class InputMessage < Hyperloop::Component
+
+  state message_field: "Type your message here"
+
+  def render
+
+    DIV(class: 'formdiv') do
+      DIV(class: 'input-datas') do
+
+        HR {}
+
+        INPUT(type: :text, value: state.message_field,  class: 'form-control')
+        .on(:change) do |e|
+            mutate.message_field e.target.value
+          end
+          .on(:focus) do |e|
+            mutate.message_field " "
+          end
+
+
+          BUTTON(class: 'btn btn-warning') do
+            "Send"
+          end.on(:click) do |ev|
+            MessagesOperations::Send(message: state.message_field)
+          end
+
+          HR {}
+
+      end
+    end
+
+  end
+
+end
+
+</pre>
+</div>
+
+<h3 id="step-78-writing-the-messages-component"><a name="user-content-step-78-writing-the-messages-component" href="#step-78-writing-the-messages-component" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.8: Writing the Messages Component</h3>
+<p>The <code>Messages</code> Component will display the TABLE containing rows with all messages content.</p>
+<p>It will loop trough the MessageStore messages state variable. This state variable is Hash of messages. Then for each message, the <code>Message</code> Component is mounted. So our component will: </p>
+<pre><code class="ruby">#/app/hyperloop/components/messages.rb
+
+...
+TBODY do
+  MessageStore.all.each do |message|
+    Message message: message
+  end
+end
+...
+
+</code></pre>
+
+<p>The <code>all</code> method will be defined in our <code>MessageStore</code> in the next steps.</p>
+<p><br></p>
+<p>The <code>Messages</code> Component code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 7.8 Messages Component" 
+  data-rows=16
+  data-top-level-component="MessagesComponent7.8">
+
+<pre>
+#/app/hyperloop/components/messages.rb
+
+class Messages < Hyperloop::Component
+
+  def render
+
+      DIV do
+      BR
+      TABLE(class: 'table table-hover table-condensed') do
+
+        THEAD do
+          TR(class: 'table-danger') do
+            TD(width: '33%') { "SENT MESSAGES" }
+          end
+        end
+
+        TBODY do
+          MessageStore.all.each do |message|
+            Message message: message
+        end
+        end
+
+      end
+    end
+
+  end
+
+end
+
+</pre>
+</div>
+
+<h3 id="step-79-writing-the-message-component"><a name="user-content-step-79-writing-the-message-component" href="#step-79-writing-the-message-component" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.9: Writing the Message Component</h3>
+<p>The <code>Message</code> component will just render a simple row containg the message value:</p>
+<p><pre><code class="ruby">#/app/hyperloop/components/message.rb
+
+...
+params.message[:message]
+...
+
+</code></pre><br />
+<br></p>
+<p>The <code>Messages</code> Component code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 7.9 Message Component" 
+  data-rows=16
+  data-top-level-component="MessageComponent7.9">
+
+<pre>
+#/app/hyperloop/components/message.rb
+
+class Message < Hyperloop::Component
+  param :message
+
+  def render
+     TR(class: 'table-success') do
+         TD(width: '50%') { params.message[:message] }
+      end
+   end
+
+end
+
+</pre>
+</div>
+
+<h3 id="step-710-writing-the-messagestore-store"><a name="user-content-step-710-writing-the-messagestore-store" href="#step-710-writing-the-messagestore-store" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.10: Writing the MessageStore Store</h3>
+<p>In our <code>MessageStore</code> we are going to:</p>
+<p>Declare a <code>messages</code> Hash state variable and define the <code>all</code> method:</p>
+<pre><code class="ruby">#app/hyperloop/stores/message_store.rb
+
+state :messages, scope: :class, reader: :all
+</code></pre>
+
+<p>Define a <code>messages?</code> method to check if messages existed:</p>
+<pre><code class="ruby">#app/hyperloop/stores/message_store.rb
+
+def self.messages?
+  state.messages
+end
+</code></pre>
+
+<p>Set the <code>state.messages</code> variable when receiving the <code>Getmessages</code> operation completed signal:</p>
+<pre><code class="ruby">#app/hyperloop/stores/message_store.rb
+
+receives MessagesOperations::GetMessages do |params|
+  puts &quot;receiving Operations::GetMessages(#{params})&quot;
+  mutate.messages params.messages
+end
+</code></pre>
+
+<p>Update the <code>state.messages</code> variable when receiving the <code>Send</code> Operation completed signal:</p>
+<pre><code class="ruby">#app/hyperloop/stores/message_store.rb
+
+receives MessagesOperations::Send do |params|
+  puts &quot;receiving Operations::Send(#{params})&quot;
+  mutate.messages &lt;&lt; params.message
+end
+</code></pre>
+
+<p>Note: You can see the <code>PUTS</code> instruction. It is really usefull when debugging your code. Everything you <code>PUTS</code> will be displayed in your Browser Javascript Console.</p>
+<p><br></p>
+<p>The <code>MessageStore</code> Store code will be like that:</p>
+<div class="togglecode" 
+  data-heading="Step 7.10 MessageStore Store" 
+  data-rows=16
+  data-top-level-component="MessageStore7.10">
+
+<pre>
+#/app/hyperloop/stores/message_store.rb
+
+class MessageStore < Hyperloop::Store
+  state :messages, scope: :class, reader: :all
+  #state :user_name, scope: :class, reader: true
+
+  def self.messages?
+    state.messages
+  end
+
+  receives MessagesOperations::GetMessages do |params|
+    puts "receiving Operations::GetMessages(#{params})"
+    mutate.messages params.messages
+  end
+
+  receives MessagesOperations::Send do |params|
+    puts "receiving Operations::Send(#{params})"
+    mutate.messages << params.message
+  end
+end
+
+</pre>
+</div>
+
+<h3 id="step-711-writing-the-messageoperations-module"><a name="user-content-step-711-writing-the-messageoperations-module" href="#step-711-writing-the-messageoperations-module" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.11: Writing the MessageOperations module</h3>
+<h4 id="step-711a-the-messageoperations-module-structure"><a name="user-content-step-711a-the-messageoperations-module-structure" href="#step-711a-the-messageoperations-module-structure" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.11.a: The MessageOperations module structure</h4>
+<p>As we described it before, we are going to write 2 <code>Server Operations</code> class: <code>Send</code> and <code>GetMessages</code>.</p>
+<p>Let&rsquo;s go with the file structure:</p>
+<pre><code class="ruby">#app/hyperloop/operations/messages_operations.rb
+
+module MessagesOperations
+
+  class GetMessages &lt; Hyperloop::ServerOp
+    # Get messages from the Rails Cache
+  end
+
+  class Send &lt; Hyperloop::ServerOp
+    # Get Messages from the Rails Cache and add the new message just sent by the user.
+  end
+
+end
+
+</code></pre>
+
+<h4 id="step-711b-server-operations-specific-settings"><a name="user-content-step-711b-server-operations-specific-settings" href="#step-711b-server-operations-specific-settings" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.11.b: Server Operations specific settings</h4>
+<p>In each <code>Server Operations</code> method we will add Hyperloop specific instructions: </p>
+<pre><code class="ruby">#app/hyperloop/operations/messages_operations.rb
+
+module MessagesOperations
+
+  class GetMessages &lt; Hyperloop::ServerOp
+    param :acting_user, nils: true
+    dispatch_to { Hyperloop::Application }
+
+    # Get messages from the Rails Cache
+  end
+
+  class Send &lt; Hyperloop::ServerOp
+    param :acting_user, nils: true
+    dispatch_to { Hyperloop::Application }
+
+    # Get Messages from the Rails Cache and add the new message just sent by the user.
+  end
+
+end
+
+</code></pre>
+
+<p>These 2 instructions are necessary for Authorization (because Server Operations run on the Server) and for Broadcasting to clients.</p>
+<p>For the purpose of our tutorial we set up them as basic as possible.</p>
+<p>You can know more about:<br><br />
+<a href="http://ruby-hyperloop.io/docs/operations/overview/#server-operations">{ Hyperloop Server Operations documentation }</a><br><br />
+<a href="http://ruby-hyperloop.io/docs/operations/overview/#dispatching-from-server-operations">{ Hyperloop dispatching from Server Operations documentation }</a><br><br />
+<a href="http://ruby-hyperloop.io/docs/policies/authorization/">{ Hyperloop policies for Authorizations }</a><br></p>
+<h4 id="step-711c-writing-the-getmessages-server-operation"><a name="user-content-step-711c-writing-the-getmessages-server-operation" href="#step-711c-writing-the-getmessages-server-operation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.11.c: Writing the GetMessages Server Operation</h4>
+<p>We now are going to take care of the <code>GetMessages</code> Server Operation code.</p>
+<p>We declare a new Hash variable <code>messages</code> which will receive the content of the Rails Cache: </p>
+<pre><code class="ruby">#app/hyperloop/operations/messages_operations.rb
+
+...
+class GetMessages &lt; Hyperloop::ServerOp
+  param :acting_user, nils: true
+  dispatch_to { Hyperloop::Application }
+  outbound :messages
+
+  # Get messages from the Rails Cache
+end
+
+...
+
+</code></pre>
+
+<p>We use the specific <code>outbound</code> Hyperloop declaration. The <code>messages</code> variable is not a classic parameter because is not needed by <code>GetMessages</code>, but we need to manipulate this <code>messages</code> variable in our <code>MessagesStore</code>. So when you need a variable being dispatched to your Stores you declare it as <code>outbound</code>.</p>
+<p>Now we can get the content of the Rails Cache:</p>
+<pre><code class="ruby">#app/hyperloop/operations/messages_operations.rb
+
+...
+class GetMessages &lt; Hyperloop::ServerOp
+  param :acting_user, nils: true
+  dispatch_to { Hyperloop::Application }
+  outbound :messages
+
+  step { params.messages = Rails.cache.fetch('messages') { [] } }
+end
+
+...
+
+</code></pre>
+
+<p>The <code>Rails.cache.fetch('messages') { [] } }</code> block will read the <code>messages</code> key in the Rails Cache and return its content or an empty hash <code>[]</code> if not exists.</p>
+<h4 id="step-711d-writing-the-send-server-operation"><a name="user-content-step-711d-writing-the-send-server-operation" href="#step-711d-writing-the-send-server-operation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.11.d: Writing the Send Server Operation</h4>
+<p>The <code>Send</code> Server Operation will:</p>
+<ul>
+<li>Receive the new message being sent</li>
+<li>Get the Rails Cache messages Hash</li>
+<li>Add the new message </li>
+<li>Write the updated Hash to the Rails Cache.</li>
+</ul>
+<pre><code class="ruby">#app/hyperloop/operations/messages_operations.rb
+
+...
+
+class Send &lt; Hyperloop::ServerOp
+  param :message
+  param :acting_user, nils: true
+  dispatch_to { Hyperloop::Application }
+
+  step do
+    params.message = { message: params.message }
+    newcachedmessages = Rails.cache.fetch('messages') { [] } &lt;&lt; params.message
+    Rails.cache.write('messages', newcachedmessages)
+  end
+end
+
+...
+</code></pre>
+
+<h4 id="step-711e-the-final-messagesoperations-module-code"><a name="user-content-step-711e-the-final-messagesoperations-module-code" href="#step-711e-the-final-messagesoperations-module-code" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.11.e: The final MessagesOperations module code</h4>
+<div class="togglecode" 
+  data-heading="Step 7.11.e MessageOperations module" 
+  data-rows=16
+  data-top-level-component="MessageOperations7.11.e">
+
+<pre>
+#/app/hyperloop/operations/messages_operations.rb
+
+module MessagesOperations
+
+  class GetMessages < Hyperloop::ServerOp
+    param :acting_user, nils: true
+    dispatch_to { Hyperloop::Application }
+    outbound :messages
+
+    step { params.messages = Rails.cache.fetch('messages') { [] } }
+  end
+
+  class Send < Hyperloop::ServerOp
+    param :message
+    param :acting_user, nils: true
+    dispatch_to { Hyperloop::Application }
+
+    step do
+      params.message = { message: params.message }
+      newcachedmessages = Rails.cache.fetch('messages') { [] } << params.message
+      Rails.cache.write('messages', newcachedmessages)
+    end
+  end
+
+end
+
+</pre>
+</div>
+
+<h4 id="step-711f-drying-the-messagesoperations-module-code"><a name="user-content-step-711f-drying-the-messagesoperations-module-code" href="#step-711f-drying-the-messagesoperations-module-code" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.11.f: DRYing the MessagesOperations module code</h4>
+<p>There are 2 parts where we can avoid repeating in our code:</p>
+<p><code>Server Operation</code> settings instructions:</p>
+<pre><code class="ruby">param :acting_user, nils: true
+dispatch_to { Hyperloop::Application }
+</code></pre>
+
+<p>and</p>
+<p>Read Rails Cache:</p>
+<pre><code class="ruby">Rails.cache.fetch('messages') { [] }
+</code></pre>
+
+<p>For the first case, we are going to create a <code>MessagesBase &lt; hyperloop::ServerOp</code> class and our 2 <code>GetMessages</code> and <code>Send</code> class will inherited from it:</p>
+<pre><code class="ruby">#/app/hyperloop/operations/messages_operations.rb
+
+module MessagesOperations
+
+  class MessagesBase &lt; Hyperloop::ServerOp
+    param :acting_user, nils: true
+    dispatch_to { Hyperloop::Application }
+  end
+
+
+  class GetMessages &lt; MessagesBase
+    outbound :messages
+
+    step { params.messages = Rails.cache.fetch('messages') { [] } }
+  end
+
+  class Send &lt; MessagesBase
+    param :message
+
+    step do
+      params.message = {
+        message: params.message
+      }
+      newcachedmessages = Rails.cache.fetch('messages') { [] } &lt;&lt; params.message
+      Rails.cache.write('messages', newcachedmessages)
+    end
+  end
+
+end
+</code></pre>
+
+<p>For the second case we are going to create a method:</p>
+<pre><code class="ruby">#/app/hyperloop/operations/messages_operations.rb
+
+...
+def cachedmessages
+  Rails.cache.fetch('messages') { [] }
+end
+...
+
+</code></pre>
+
+<h4 id="step-711g-the-final-dryed-messagesoperations-module-code"><a name="user-content-step-711g-the-final-dryed-messagesoperations-module-code" href="#step-711g-the-final-dryed-messagesoperations-module-code" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.11.g: The final DRYed MessagesOperations module code</h4>
+<div class="togglecode" 
+  data-heading="Step 7.11.g MessageOperations module" 
+  data-rows=16
+  data-top-level-component="MessageOperations7.11.g">
+
+<pre>
+#/app/hyperloop/operations/messages_operations.rb
+
+module MessagesOperations
+
+  class MessagesBase < Hyperloop::ServerOp
+    param :acting_user, nils: true
+    dispatch_to { Hyperloop::Application }
+
+    def cachedmessages
+      Rails.cache.fetch('messages') { [] }
+    end
+
+  end
+
+
+  class GetMessages < MessagesBase
+    outbound :messages
+
+    step { params.messages = cachedmessages }
+  end
+
+
+  class Send < MessagesBase
+    param :message
+
+    step do
+      params.message = {
+        message: params.message
+      }
+      newcachedmessages = cachedmessages << params.message
+      Rails.cache.write('messages', newcachedmessages)
+    end
+  end
+
+
+end
+
+</pre>
+</div>
+
+<h3 id="step-712-testing-the-final-application"><a name="user-content-step-712-testing-the-final-application" href="#step-712-testing-the-final-application" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Step 7.12: Testing the final application</h3>
+<p>Restart your Rails server. Refresh your <code>localhost:3000</code> page.<br />
+And you can try to send messages, they should be displayed on your page.<br />
+You can also try the push notifications mechanism by opening your app in another browser.</p>
+<h2 id="chapter-8-deploy-to-production"><a name="user-content-chapter-8-deploy-to-production" href="#chapter-8-deploy-to-production" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="chapter8">Chapter 8: Deploy to production</a></h2>
+<p>First you need to configure properly your Rails cache by modifying your <code>config/environments/production.rb</code> file.</p>
+<pre><code class="ruby">#config/environments/production.rb
+
+config.action_controller.perform_caching = true
+config.cache_store = :file_store, &quot;tmp/cache&quot;
+</code></pre>
+
+<p>Then, in order to configure your Helloworld Tutorial application for production, please follow the <code>production mode</code> tutorial:<br />
+<br></p>
+<p><button type="button" class="btn btn-primary btn-lg btn-hyperlooppink" onclick="location.href='/tutorials/hyperlooprails/productionmode';">Hyperloop Production mode tutorial</button></p>
+<p><br><br></p>
+<p>You can find the complete source code of this tutorial here: </p>
+<p><button type="button" class="btn btn-primary btn-lg btn-hyperlooptrace" onclick="location.href='https://github.com/ruby-hyperloop/hyperloop-rails-helloworld';">Hyperloop with Rails Helloworld source code</button></p>
+<p>Hope you have been Hyperloop-ed !</p>
+<div>
+  <p>The <strong>best way</strong> to get help and contribute is to join our Gitter Chat</p>
+  <button type="button" class="btn btn-primary btn-lg btn-hyperloopgitter" onclick="location.href='https://gitter.im/ruby-hyperloop/chat';">Gitter Chat</button>
+</div></article></body></html>

@@ -11,9 +11,9 @@ module HyperloopRailsNewhelloword
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 
-    ###########################################
-    # Hyperloop config for advanced configuration
-    ###########################################
+    ##########################################
+    #Hyperloop config for advanced configuration
+    ##########################################
 
     config.hyperloop.auto_config = false
     config.eager_load_paths -= %W[#{config.root}/app/hyperloop]

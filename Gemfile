@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'i18n-js', '>= 3.0.0.rc11'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -65,3 +65,6 @@ gem 'capistrano'
 gem 'capistrano-bundler'
 gem 'capistrano-rails'
 gem 'capistrano-rbenv', github: "capistrano/rbenv"
+
+gem 'opal_hot_reloader', git: 'https://github.com/fkchang/opal-hot-reloader.git'
+gem 'foreman'

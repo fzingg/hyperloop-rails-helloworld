@@ -18,6 +18,10 @@ require 'hyper-operation'
 require 'hyper-router/react-router-source'
 require 'hyper-router'
 
+# require 'opal_hot_reloader'
+# #
+# OpalHotReloader.listen(25222, true)
+
 require_tree './models' if RUBY_ENGINE == 'opal'
 require_tree './operations'
 require_tree './stores'

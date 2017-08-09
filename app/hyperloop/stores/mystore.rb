@@ -9,7 +9,7 @@ class MyStore < Hyperloop::Store
   end
 
   receives SaveDescriptionOp do 
-    alert("Data saved : #{MyStore.field_value}")
+    #alert("Data saved : #{MyStore.field_value}")
     puts "*************************"
     puts "Receiving SaveDescriptionOp"
     MyStore.mutate.field_value ""

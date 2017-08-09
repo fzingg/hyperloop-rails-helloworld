@@ -1,5 +1,4 @@
 
-
 class Helloworld < Hyperloop::Component
 
   before_mount do
@@ -17,7 +16,7 @@ class Helloworld < Hyperloop::Component
     DIV(class: 'hyperloophelloword') do
 
       IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
-      H3 { "The complete isomorphic ruby framework" }
+      H3 { "The Amazing complete isomorphic ruby framework" }
       BR{}
 
       InputMessage()
@@ -62,7 +61,7 @@ class Helloworld < Hyperloop::Component
       TABLE(class: 'table table-hover table-condensed') do
         THEAD do
           TR(class: 'table-danger') do
-            TD(width: '33%') { "SAVED HELLO WORLD" }
+            TD(width: '33%') { "SAVED HELLO WORLD LIST" }
           end
         end
         TBODY do
