@@ -1,10 +1,10 @@
-module Hyperloop
-  module AutoCreate
-    def needs_init?
-      true
-    end
-  end
-end
+# module Hyperloop
+#   module AutoCreate
+#     def needs_init?
+#       true
+#     end
+#   end
+# end
 
         
 Hyperloop.configuration do |config|
