@@ -1,10 +1,10 @@
-# module Hyperloop
-#   module AutoCreate
-#     def needs_init?
-#       true
-#     end
-#   end
-# end
+module Hyperloop
+  module AutoCreate
+    def needs_init?
+      true
+    end
+  end
+end
 
         
 Hyperloop.configuration do |config|
@@ -17,7 +17,6 @@ Hyperloop.configuration do |config|
     cluster: 'eu',
     encrypted: true
   }
-  
   
 end
 
