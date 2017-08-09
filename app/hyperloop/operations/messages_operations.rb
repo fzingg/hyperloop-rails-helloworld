@@ -4,7 +4,7 @@ module MessagesOperations
     param :acting_user, nils: true
     dispatch_to { Hyperloop::Application }
 
-    step { Rails.logger.info " *************** DEBUG TestServerOp ********************** " }
+    step { Rails.logger.info " ------------------- connections = #{Hyperloop::Connection.active}------------- " }
 
   end
 
