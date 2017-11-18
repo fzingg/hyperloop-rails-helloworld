@@ -1,6 +1,11 @@
 
 class Helloworld < Hyperloop::Component
 
+  # render do
+  #   H1 { "#{MessageStore.messages.nil?}" }
+    
+  # end
+
   before_mount do
     @helloworldmodels = Helloworldmodel.all
   end

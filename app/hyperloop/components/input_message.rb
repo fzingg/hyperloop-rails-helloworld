@@ -9,20 +9,20 @@ class InputMessage < Hyperloop::Component
 
 				HR {}
 
-				INPUT(type: :text, value: state.message_field,  class: 'form-control')
-				.on(:change) do |e|
-			      mutate.message_field e.target.value
-			    end
-			    .on(:focus) do |e|
-			      mutate.message_field " "
-			    end
+				# INPUT(type: :text, value: state.message_field,  class: 'form-control')
+				# .on(:change) do |e|
+			 #      mutate.message_field e.target.value
+			 #    end
+			 #    .on(:focus) do |e|
+			 #      mutate.message_field " "
+			 #    end
 			    
 			    
-			    BUTTON(class: 'btn btn-warning') do
-			      "Send"
-			    end.on(:click) do |ev|
-			      MessagesOperations::Send(message: state.message_field)
-			    end
+			 #    BUTTON(class: 'btn btn-warning') do
+			 #      "Send"
+			 #    end.on(:click) do |ev|
+			 #      MessagesOperations::Send(message: state.message_field)
+			 #    end
 
 			    HR {}
 

@@ -1,0 +1,11 @@
+var Config = {
+  env:                       "<%= Rails.env %>",
+  locale:                    "<%= I18n.locale %>",
+  currency_unit:             "<%= I18n.t('number.currency.format.unit') %>",
+  desk_online_agents_url:    "/desk_delegate/agent_online_check?v=1",
+  iw_url:                    "<%=  %>",
+  backgrounds_url:           "/v1/backgrounds",
+  small_loading_spinner_url: "<%= asset_path('loading.gif') %>",
+  loading_spinner_url:       "<%= asset_path('loading-spinner.gif') %>",
+  loading_ellipsis_url:      "<%= asset_path('loading-ellipsis.gif') %>"
+}
