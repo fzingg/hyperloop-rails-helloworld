@@ -72,3 +72,5 @@ gem 'capistrano-rbenv', github: "capistrano/rbenv"
 
 gem 'opal_hot_reloader', git: 'https://github.com/fkchang/opal-hot-reloader.git'
 gem 'foreman'
+
+gem 'webpacker'

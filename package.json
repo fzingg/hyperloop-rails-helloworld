@@ -2,8 +2,10 @@
   "name": "hyperloop-rails-newhelloword",
   "private": true,
   "dependencies": {
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2",
+    "@rails/webpacker": "^3.0.2",
+    "coffeescript": "1.12.7",
+    "react": "15.6.2",
+    "react-dom": "15.6.2",
     "semantic-ui-react": "^0.76.0"
   },
   "description": "![Screen](http://ruby-hyperloop.io/images/tutorials/Hyperloop-helloworld.png)",
@@ -13,7 +15,8 @@
     "test": "test"
   },
   "devDependencies": {
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
