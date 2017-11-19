@@ -13,8 +13,8 @@ Hyperloop.configuration do |config|
   config.prerendering = :off
   #config.import 'reactrb/auto-import'
   config.transport = :simple_poller
-  config.import Webpacker.manifest.lookup("client_and_server.js").split("/").last
-  config.import Webpacker.manifest.lookup("application.js").split("/").last
+  config.import 'client_and_server'
+  config.import 'application'
   # config.channel_prefix = "Hyperloop"
   # config.opts = {
   #   app_id: '376259',
