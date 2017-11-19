@@ -1,0 +1,1 @@
+Sem = require('semantic-ui-react');

@@ -20,6 +20,20 @@ class Helloworld < Hyperloop::Component
 
     DIV(class: 'hyperloophelloword') do
 
+      Sem.Segment(basic: true) {
+      
+      Sem.Container(style: { marginTop: '2em' }) {
+        Sem.Grid {
+          Sem.GridRow {
+            Sem.GridColumn {
+              "grid"
+            }
+          }
+          "grid"
+        }
+      }
+    }
+
       IMG(src: 'https://rawgit.com/ruby-hyperloop/hyperloop-js-helloworld/master/hyperloop-logo-medium-white.png?raw=true')
       H3 { "The Amazing complete isomorphic ruby framework" }
       BR{}
