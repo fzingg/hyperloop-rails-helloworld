@@ -8,6 +8,10 @@ end
 
         
 Hyperloop.configuration do |config|
+  # config.cancel_import('hyper-router/react-router-source')
+  config.compress_system_assets = false
+  config.prerendering = :off
+  #config.import 'reactrb/auto-import'
   config.transport = :simple_poller
   # config.channel_prefix = "Hyperloop"
   # config.opts = {

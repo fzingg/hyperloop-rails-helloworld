@@ -11,11 +11,11 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require react_ujs
+
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require 'hyperloop/pusher'
+
 //= require_tree .
 
 //= require 'components'

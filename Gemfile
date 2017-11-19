@@ -1,6 +1,9 @@
 ruby "2.4.0"
 
+
 source 'https://rubygems.org'
+source 'http://demo.kursator.com:9292'
+
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -59,7 +62,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'redis'
 #gem 'pusher'
 
-gem 'hyperloop'
+gem 'react-rails', '~> 2.3.1'
+gem 'hyperloop', '0.15.0-sachsenring-lap4'
 
 gem 'capistrano'
 gem 'capistrano-bundler'
