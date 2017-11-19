@@ -18,6 +18,5 @@
 
 //= require_tree .
 
-//= require 'components'
-Opal.load('components');
+//= require hyperloop-loader
 

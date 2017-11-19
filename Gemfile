@@ -63,7 +63,7 @@ gem 'redis'
 #gem 'pusher'
 
 gem 'react-rails', '~> 2.3.1'
-gem 'hyperloop', '0.15.0-sachsenring-lap4'
+gem 'hyperloop', '0.15.0-sachsenring-lap5'
 
 gem 'capistrano'
 gem 'capistrano-bundler'

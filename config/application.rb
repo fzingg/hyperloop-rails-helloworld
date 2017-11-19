@@ -15,19 +15,19 @@ module HyperloopRailsNewhelloword
     #Hyperloop config for advanced configuration
     ##########################################
 
-    config.hyperloop.auto_config = false
-    config.eager_load_paths -= %W[#{config.root}/app/hyperloop]
-    #config.eager_load_paths += %W[#{config.root}/app/hyperloop/models]
-    config.eager_load_paths += %W[#{config.root}/app/hyperloop/operations]
+    # config.hyperloop.auto_config = false
+    # config.eager_load_paths -= %W[#{config.root}/app/hyperloop]
+    # #config.eager_load_paths += %W[#{config.root}/app/hyperloop/models]
+    # config.eager_load_paths += %W[#{config.root}/app/hyperloop/operations]
 
-    ###########################################
-    # Hyperloop config for production mode
-    ###########################################
+    # ###########################################
+    # # Hyperloop config for production mode
+    # ###########################################
 
-    config.autoload_paths   -= %W[#{config.root}/app/hyperloop]
+    # config.autoload_paths   -= %W[#{config.root}/app/hyperloop]
 
-    config.eager_load_paths += %W[#{config.root}/app/hyperloop/models]
-    config.autoload_paths += %W[#{config.root}/app/hyperloop/models]
+    # config.eager_load_paths += %W[#{config.root}/app/hyperloop/models]
+    # config.autoload_paths += %W[#{config.root}/app/hyperloop/models]
     
 
   end

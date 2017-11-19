@@ -4,13 +4,13 @@
 Rails.application.config.assets.version = '1.0'
 
 
-Rails.application.config.assets.precompile += %w( react-server.js components.js )
+#Rails.application.config.assets.precompile += %w( react-server.js components.js )
 # Add additional assets to the asset load path.
 # Rails.application.config.assets.paths << Emoji.images_path
 # Add Yarn node_modules folder to the asset load path.
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
-Rails.application.config.assets.paths << Rails.root.join('app', 'hyperloop').to_s
+#Rails.application.config.assets.paths << Rails.root.join('app', 'hyperloop').to_s
 # Rails.application.config.assets.paths << Rails.root.join('app', 'models').to_s
 
 
